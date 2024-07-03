@@ -8,6 +8,6 @@ import edu.utvt.attendance.entities.Persona;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface PersonaRepository extends JpaRepository<Persona, UUID> {
+public interface PersonaRepository extends JpaRepository<Persona, Long> {
     Optional<Persona> findByNombre(String nombre);
 }
